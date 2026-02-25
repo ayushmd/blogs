@@ -32,6 +32,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased bg-[var(--background)] text-[var(--foreground)]`}
       >
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(){
+                var t=localStorage.getItem('theme');
+                if(t==='dark'||t==='light'){ document.documentElement.classList.toggle('dark',t==='dark'); }
+                else { document.documentElement.classList.toggle('dark',window.matchMedia('(prefers-color-scheme: dark)').matches); }
+              })();
+            `,
+          }}
+        />
         <ThemeProvider>
           <Header />
           {children}
