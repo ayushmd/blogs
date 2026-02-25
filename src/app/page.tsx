@@ -72,7 +72,7 @@ export default function Home() {
             <li key={post.slug}>
               <article>
                 <Link
-                  href={`/blog/${post.slug}`}
+                  href={`/${post.slug}`}
                   className="group block rounded-xl border border-[var(--border)] bg-[var(--surface)] p-5 transition hover:border-[var(--muted)] dark:hover:border-[var(--muted)]"
                 >
                   <h2 className="font-semibold text-[var(--foreground)] group-hover:text-[var(--accent)] dark:group-hover:text-[var(--accent)]">
