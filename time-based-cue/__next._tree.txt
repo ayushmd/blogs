@@ -1,0 +1,7 @@
+:HL["https://ayushmd.github.io/blogs/_next/static/chunks/dec898ec7c714798.css","style"]
+:HL["https://ayushmd.github.io/blogs/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["https://ayushmd.github.io/blogs/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/blogs/images/create-your-own-queue/gopher_alarm.png","image"]
+:HL["/blogs/images/create-your-own-queue/lsm_architecture.jpg","image"]
+:HL["/blogs/images/create-your-own-queue/scheduler_diagram.png","image"]
+0:{"buildId":"3lK_aMv3myOFepyju6-hX","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"d","paramKey":"time-based-cue","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
