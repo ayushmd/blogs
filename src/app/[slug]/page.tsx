@@ -37,7 +37,7 @@ export default async function BlogPost({ params }: Props) {
   if (!post) notFound();
 
   return (
-    <main className="mx-auto max-w-3xl px-3 py-10">
+    <main className="mx-auto min-w-0 max-w-3xl px-3 py-10">
       <Link
         href="/"
         className="mb-6 inline-block text-sm text-[var(--muted)] hover:text-[var(--foreground)]"
@@ -76,7 +76,7 @@ export default async function BlogPost({ params }: Props) {
           </time>
           <TagChips tags={post.tags} />
         </header>
-        <div className="prose prose-base max-w-none">
+        <div className="prose prose-base min-w-0 max-w-none">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{

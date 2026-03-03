@@ -29,7 +29,7 @@ export default function Home() {
   const posts = getAllPosts();
 
   return (
-    <main className="mx-auto max-w-3xl px-3 py-10">
+    <main className="mx-auto min-w-0 max-w-3xl px-3 py-10">
       <section className="mb-12">
         <h1 className="text-2xl font-bold text-[var(--foreground)]">
           Hi, I&apos;m {site.name}

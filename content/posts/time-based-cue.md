@@ -6,17 +6,19 @@ tags: ["go", "queue", "distributed", "rocksdb", "from scratch", "embedded db", "
 github: "https://github.com/ayushmd/cue"
 ---
 
-While working on a side project i needed a service which would be trigger and return the event at required timestamp or after specified time(seconds, hours or perhaps days) like a alarm clock. Well could have got away with something like 
+![alt text](/blogs/images/create-your-own-queue/gopher_alarm.png)
+
+While working on a side project i needed a service which would trigger and return the event at required timestamp or after specified time(seconds, hours or perhaps days) like a alarm clock. Well could have got away with something like 
 
 ```
 setTimeout(func,1000)
 ```
 
-But it would be on RAM and in case of crash there would be not persistence for such events. Also in case of multiple such triggers from different part of codes it would create additional computation and less control over these events. It would be much efficient to create a single component that would manage everything and sit as service something similar to redis or rabbitmq.
+But it would be on RAM and in case of crash there would be no persistence for such events. Also in case of multiple such triggers from different locations in code it would create additional management and less control over these events. It would be much efficient to create a single component that would manage everything and sit as service something similar to redis or rabbitmq.
 
-Which brought me to thought, There have been many queues which hold data in distributed systems but notification/scheduling system has always been a glue of queue's, database with a timestamp and controllers running in background for notification. So why not create service which does it all.
+Which brought me to the thought, There have been many queues which hold data in distributed systems but notification/scheduling system has always been a glue of queue's, database with a timestamp and controllers running in background for notification. So why not create service which does it all.
 
-Initialy started by creating a service which runs on memory with powerful concurrency of Go along with min Heap to do priority scheduling based on ttl. Which had a pretty simple implementation and worked perfectly but it does not guarantee persistence, which is not suitable for something like scheduling a email notification to a user after 2 days. 
+Initialy started by creating a service which runs on memory with powerful concurrency of Go along with Min Heap to do priority scheduling based on ttl. Which had a pretty simple implementation and worked perfectly but it does not guarantee persistence, which is not suitable for something like scheduling a email notification to a user after 2 days. 
 
 ```go
 func (q *TTLQueue) Push(data any, priority int64) {
@@ -76,14 +78,15 @@ func main() {
 	}, time.Now().Add(10*time.Second).Unix())
 }
 ```
+To create a stable tool we need to first decide what to build on
 
 ## What and why to choose?
 
 ### Storage Layer
 
-To provide persistence it would require a database or perhaps a storage engine where the events can be stored and pooled frequently. What better than storage engines like RocksDB or SQLite these are lower levels of storage units which given abstractions over storage. RocksDB(https://rocksdb.org/) is one such embedded db which has been battle tested in MyRocks(MySQL on rocksdb), TikV, Kafka migrating to rocksdb for storage engine and also Apache Flink in big data processing. 
+To provide persistence it would require a database or perhaps a storage engine where the events can be stored and pooled frequently. What better than storage engines like RocksDB or SQLite these are lower levels of storage units which given abstractions over os level storage. RocksDB(https://rocksdb.org/) is one such embedded db which has been battle tested in MyRocks(MySQL on rocksdb), TikV, Kafka migrating to rocksdb for storage engine and also Apache Flink in big data processing. 
 
-Such db makes a perfect case for persistence and high availability with little overhead compared to a full blown client-server database. Below is a short explaination of how LSM Based RocksDB works.
+Such db makes a perfect case for persistence and high availability with little overhead compared to a full blown client-server database. Below is a short explaination of how LSM Based RocksDB and embeddeddb's works.
 
 **Embedded DB**
 
@@ -94,6 +97,8 @@ An `SSTable` (Sorted String Table) is a persistent, immutable, sorted file store
 
 ![alt text](/blogs/images/create-your-own-queue/lsm_architecture.jpg)
 *Img 1: LSM architecture Source: https://vivekbansal.substack.com/p/what-is-lsm-tree*
+
+You can read more about LSM Tree's in the paper (https://www.cs.umb.edu/~poneil/lsmtree.pdf)
 
 I chose Go to create this service as it is my goto language and RocksDB is written in C++, though there are direct bindings for C++ functions in Go there are some inconsistensies while using FFI. There are many well known KV Stores in native Go Implementation like BadgerDB(used by jaeger), BoltDB/BBolt(used by etcd), etcd, PebbleDB. So after researching for sometime i decided to use PebbledDB which is a RocksDB inspired key-value store written in go. It is open-source and has support for distributed systems used by and built by CockroachDB.  
 

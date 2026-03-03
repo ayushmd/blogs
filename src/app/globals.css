@@ -31,15 +31,22 @@
   --accent-hover: #bfdbfe;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+  min-width: 0;
 }
 
 /* Prose styles for blog content */
 .prose {
   color: var(--foreground);
+  min-width: 0; /* allow shrink so code/tables scroll inside, no page overflow */
 }
 .prose h1,
 .prose h2,
@@ -97,6 +104,7 @@ body {
   margin: 1rem 0;
   border-radius: 0.5rem;
   max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
@@ -163,6 +171,7 @@ body {
   overflow-x: auto;
   margin: 1rem 0;
   border: 1px solid var(--border);
+  min-width: 0;
 }
 .prose pre code {
   background: none;

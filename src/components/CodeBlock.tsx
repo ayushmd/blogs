@@ -55,8 +55,8 @@ export function CodeBlock({ language, code }: CodeBlockProps) {
   };
 
   return (
-    <div className="not-prose my-6 overflow-hidden rounded-xl border border-[var(--border)] shadow-sm">
-      <div className="flex items-center justify-between gap-2 border-b border-[var(--border)] bg-[var(--surface)] px-3 py-1.5">
+    <div className="not-prose my-6 min-w-0 overflow-hidden rounded-xl border border-[var(--border)] shadow-sm">
+      <div className="flex min-w-0 items-center justify-between gap-2 border-b border-[var(--border)] bg-[var(--surface)] px-3 py-1.5">
         <span className="text-xs font-semibold uppercase tracking-wider text-[var(--foreground)]">
           {label}
         </span>
@@ -84,7 +84,7 @@ export function CodeBlock({ language, code }: CodeBlockProps) {
           )}
         </button>
       </div>
-      <div className="code-block-content max-w-full overflow-x-auto bg-[var(--code-bg)]">
+      <div className="code-block-content min-w-0 max-w-full overflow-x-auto bg-[var(--code-bg)]">
         <SyntaxHighlighter
           language={language}
           style={style}
