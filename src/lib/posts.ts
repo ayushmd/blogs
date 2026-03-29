@@ -7,6 +7,7 @@ const postsDirectory = path.join(process.cwd(), "content/posts");
 export interface PostMeta {
   slug: string;
   title: string;
+  subtitle?: string;
   date: string;
   description: string;
   tags: string[];
@@ -24,6 +25,12 @@ function parseTags(data: { tags?: unknown }): string[] {
   return [];
 }
 
+function parseSubtitle(data: { subtitle?: unknown; subTitle?: unknown }): string | undefined {
+  if (typeof data.subtitle === "string") return data.subtitle;
+  if (typeof data.subTitle === "string") return data.subTitle;
+  return undefined;
+}
+
 export function getAllPosts(): PostMeta[] {
   if (!fs.existsSync(postsDirectory)) return [];
   const fileNames = fs.readdirSync(postsDirectory);
@@ -37,14 +44,20 @@ export function getAllPosts(): PostMeta[] {
       return {
         slug,
         title: (data.title as string) ?? slug,
+        subtitle: parseSubtitle(data),
         date: (data.date as string) ?? "",
         description: (data.description as string) ?? "",
         tags: parseTags(data),
         github: typeof data.github === "string" ? data.github : undefined,
       };
     })
-    .filter((p) => p.date)
-    .sort((a, b) => (b.date > a.date ? 1 : -1));
+    .sort((a, b) => {
+      const aHasDate = Boolean(a.date);
+      const bHasDate = Boolean(b.date);
+      if (aHasDate !== bHasDate) return aHasDate ? 1 : -1;
+      if (!aHasDate && !bHasDate) return a.title.localeCompare(b.title);
+      return b.date.localeCompare(a.date);
+    });
   return posts;
 }
 
@@ -56,6 +69,7 @@ export function getPostBySlug(slug: string): Post | null {
   return {
     slug,
     title: (data.title as string) ?? slug,
+    subtitle: parseSubtitle(data),
     date: (data.date as string) ?? "",
     description: (data.description as string) ?? "",
     tags: parseTags(data),

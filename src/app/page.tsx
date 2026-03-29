@@ -79,22 +79,39 @@ export default function Home() {
                   <h2 className="font-semibold text-[var(--foreground)] group-hover:text-[var(--accent)] dark:group-hover:text-[var(--accent)]">
                     {post.title}
                   </h2>
+                  {post.subtitle && (
+                    <div className="mt-3 flex items-baseline gap-2 text-sm">
+                      <span className="inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--border)] px-2 py-0.5 font-semibold uppercase tracking-wide text-[var(--foreground)]">
+                        Series
+                      </span>
+                      <p className="font-bold text-[var(--foreground)]">
+                        {post.subtitle}
+                      </p>
+                    </div>
+                  )}
                   {post.description && (
-                    <p className="mt-1.5 text-sm text-[var(--muted)]">
+                    <p className="mt-6 text-sm text-[var(--muted)]">
                       {post.description}
                     </p>
                   )}
                   <TagChips tags={post.tags} />
-                  <time
-                    dateTime={post.date}
-                    className="mt-2 block text-xs text-[var(--muted)]"
-                  >
-                    {new Date(post.date).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </time>
+                  {post.date ? (
+                    <time
+                      dateTime={post.date}
+                      className="mt-2 block text-xs text-[var(--muted)]"
+                    >
+                      {new Date(post.date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </time>
+                  ) : (
+                    <span className="mt-3 inline-flex items-center gap-1.5 rounded-full border border-[var(--border)] bg-[var(--border)] px-2 py-0.5 text-xs font-medium text-[var(--muted)]">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#67e8f9]" aria-hidden />
+                      Coming soon
+                    </span>
+                  )}
                 </Link>
               </article>
             </li>

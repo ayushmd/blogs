@@ -100,6 +100,25 @@ body {
 .prose a:hover {
   color: var(--accent-hover);
 }
+.prose details > summary {
+  cursor: pointer;
+}
+.prose details {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+}
+.prose details > summary {
+  margin: 0;
+}
+.prose details ul,
+.prose details ol {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  padding-left: 2rem;
+}
 .prose .table-wrapper {
   margin: 1rem 0;
   border-radius: 0.5rem;
