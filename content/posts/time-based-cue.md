@@ -1,6 +1,6 @@
 ---
 title: "Building a Persistent TTL-Based Queue along with embedded database"
-date: "2025-02-25"
+date: "2026-02-25"
 description: "A durable, time-based event queue built from scratch with Go, PebbleDB, and gRPC — designed for reliability beyond in-memory timers."
 tags: ["go", "queue", "distributed", "rocksdb", "from scratch", "embedded db", "system design", "grpc"]
 github: "https://github.com/ayushmd/cue"
