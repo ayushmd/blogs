@@ -1,3 +1,0 @@
----
-title: "Modern linux networking"
----

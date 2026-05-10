@@ -1,8 +1,13 @@
 ---
-title: "Building S3 Like Multi-Node Object Storage from scratch"
-subtitle: "Part 2 - Making a multi-node s3 compatible object storage with raft consensus"
-description: ""
+title: "Building S3 Compatible Multi-Node Object Storage with Raft Consensus"
+subtitle: "Part 2 - Building S3 Like Object Storage"
+date: "2026-05-10"
+description: "This article goes in depth about Raft Consensus and using it to develop a object storage layer along with the UI and SDK which is S3 API Compatible. It goes in deep about the design decisions and tradeoffs."
+tags: ["go", "s3", "distributed", "raft", "from scratch", "system design", "pebbledb", "rocksdb"]
+github: "https://github.com/ayushmd/s2"
 ---
+
+![Go gopher relaxing on a raft in the ocean - a visual pun for Raft consensus algorithm](/blogs/images/s3-like-object-storage/part-2-cover.png)
 
 ### Preface
 
@@ -23,7 +28,11 @@ The 3 main aim of this project:
 
 In previous article we took a look at how other object storage work, in this part we will be building the storage layer, a multi-node raft consensus cluster with raft, supporting crud from the already existing s3 client and finally putting up a ui for easy accessibility. If you have'nt read the previous article i would recommend to go through it [here](/s3-like-object-storage-part-1).
 
-Let's start by addressing the elephant in the room, how do we make it such that multiple node's coordinate with each other & dont miss a beat. This is generally done by a consensus algorithm like Paxos, Zookeper's ZAB, Raft.
+Let's start by addressing the Elephant in the room, how do we make it such that multiple node's coordinate with each other & dont miss a beat. 
+
+<!-- ![alt text](/blogs/images/s3-like-object-storage/elephant.gif) -->
+
+This is generally done by a consensus algorithm like Paxos, Zookeper's ZAB, Raft.
 
 In Distributed Systems a algorithm which is used extensively is Raft. What is it ? Why is it so popular ? What can we use to create it for ?
 
@@ -63,6 +72,8 @@ The leader election in Raft happens by a node which starts as follower state if 
 The node with the majority votes in a term becomes the leader. If 4 nodes start together there is a randomized timeout between 150ms-300ms to prevent split votes and multiple leaders at once.
 
 ![alt text](/blogs/images/s3-like-object-storage/raft_leader.gif)
+
+![alt text](/blogs/images/s3-like-object-storage/spiderman_pointing.png)
 
 In our implementation instead of predefined nodes we will add nodes dynamically. We first start with a single node which converts itself to a leader after some terms. Then we add more nodes dynamically with the master's IP, similar to how kubernetes cluster is bootstrapped.
 
@@ -419,7 +430,7 @@ The first way ensures efficient resource utilisation but is difficult to manage 
 
 We will need a storage layer to store the metadata and mappings for quick lookups and which will ensure persistence. Lets bring in pebble db a trusted kv storage engine from previous [article](/time-based-cue).
 
-We run embedded db on each node along with our server only, pebbledb is a embedded db so it does'nt need to be deployed like a server. we spin up db which gives you access to db operations similar to sqlite. The state maintained in db is same throughout as Raft ensures seqence as we saw earlier, so all the db instances across node's are in sync. This is similar to etcd, where it uses badger and raft for distributed kv store but we only store a metadata not a generalized storage like etcd.
+We run embedded db on each node along with our server only, **PebbleDb** is a embedded db so it does'nt need to be deployed like a server. we spin up db which gives you access to db operations similar to sqlite. The state maintained in db is same throughout as Raft ensures seqence as we saw earlier, so all the db instances across node's are in sync. This is similar to etcd, where it uses badger and raft for distributed kv store but we only store a metadata not a generalized storage like etcd.
 
 Pebble db does not support atomic operations inherently. But we kind of dont need to do atomic updates, just like we did for the file storage we store multiple entries, and do the update for the last one approaching and cleanup the rest of entries. 
 So now we have a storage layer which acts like switch to many clients who race to do file uploads but the db points to the last entry only.
@@ -469,6 +480,12 @@ storage
 
 This is a tradeoff again, more storage for reliability and durability. This also opens up a window for another feature which is versioning, we can mark id's as version's then keep and cleanup data as per versioning policies, though we wont be implementing it currently.
 
+
+You might ask why not a full db is used, which has multiple column's or a document perhaps? why kv db?. But I'd say we dont need a db as such, at storage layer a lot of db's end up looking like a ordered key-value pairs even when you store it in multi-column format, so if we are not looking for any complex joins or backups or transactions but only direct queries, embedded db work just fine.
+
+The main selling feature rather is it get's bundled in one **Single Binary** no external dependencies.
+
+![alt text](/blogs/images/s3-like-object-storage/single_binary.png)
 
 <!-- Let's now discuss how the data is stored in our key-value database, you might ask why not a full db is used, which has multiple column's or a document perhaps? why kv db?. But I'd say we dont need a db as such, at storage layer a lot of db's end up looking like a ordered key-value pairs even when you store it in multi-column format, so if we are not looking for any complex joins or backups or transactions but only direct queries embedded db work just fine. A embedded db like rock's db or pebble db is used by other db and tools, the heavy lifiting is already done by this embedded db layer, the data is indexed, and you get to store exactly what you want. Embedded db also give you full control on how you want to store and how much you want to store.  -->
 
@@ -562,12 +579,15 @@ It would be a bit convinent to have a ui, so instead of creating a ui of own i t
 The ui is not just frontend, the frontend has a go backend which does all the api requests and renders it to the frontend. So the main logic we need to change is a go backend. The object-browser had lot's of moving parts web sockets, authentication, prefetches and what not.
 
 # JUST GIVE ME THE UI
+![alt text](/blogs/images/s3-like-object-storage/let_me_in.gif)
 
-So after wrangling my head around a bit i was able to bypass and remove authentication, yet it did'nt seem to work as i wanted it to. Only listing api was working. This was the perfect use case for AI, with the help of Cursor i was able to make it work with my backend and finally we have a UI.
+So after wrangling my head around a bit i was able to bypass and remove authentication, yet it did'nt seem to work as i wanted it to. Only listing api was working. This was the perfect use case for AI, with the help of Cursor i was able to make it work with my backend and finally we have a UI in all it's glory. You can access the changed ui repo on my github [here](https://github.com/ayushmd/minio-object-browser)
 
-<show_ui_demo>
+Below is the demo of the **Cluster dashboard UI**, **Minio UI** and the **Storage backend**. The demo shows how files can be served even if a node goes down from other replicas. The Cluster Dashboard UI is the UI for seeing live metrics polled via all the nodes. The minio ui is running locally pointing to a HAProxy load balancer which load balances requests on the `3 nodes` of our Cluster.
 
-Also now as we support the S3 API's we have access to wide list of libraries and sdk's across languages. So wrote a simple script which goes throught the files check if it is a csv if it is it downloads and merges all the csv's to one. 
+![UI Demo Video](/blogs/images/s3-like-object-storage/demo_video.mp4)
+
+Also now as we support the S3 API's we have access to wide list of libraries and sdk's across languages. So wrote a simple script which goes through the files and checks if it is a csv, if yes it downloads and merges all the csv's to one. 
 
 ```py
 paginator = s3.get_paginator("list_objects_v2")
@@ -594,7 +614,7 @@ print(f"Saved merged file to {OUTPUT_FILE}")
 
 and voila it works like a charm
 
-After making this my wish extended to also support spark application's as well. But it requires me to implement a lot more function's
+After making this, my wish extended to also support spark application's as well. But it requires me to implement a lot more function's
 
 `CopyObjectS3`, `DeleteObjectsS3`, `GetBucketLocationS3`, `CreateMultipartUploadS3`, `UploadPartS3`, `CompleteMultipartUploadS3`, `AbortMultipartUploadS3`, `ListPartsS3`, `ListMultipartUploadsS3`, `GetRangedObject`
 
@@ -602,7 +622,38 @@ Esentially optimised functions for the exsisting CRUD operations. Though we can 
 
 Though the above section of UI and S3 Client API's might sound short compared to article but took the most time in figuring out and playing around 😅.
 
+Our architecture looks something like below, each of the component is distributed across all nodes, this works until only certain size of cluster after which it starts showing cracks. The number is still large so there isn't a need to optimize it further.
+
+![alt text](/blogs/images/s3-like-object-storage/arch.png)
+
+A scalable architecture would be to isolate all the components and scale them indivisually. The very first would be the metadata store which should be isolated, as replicating data on all nodes is the main bottleneck, as the number of node's increase the  replication lag increases and leads to inconsistent behaviour. Even in kubernetes there is etcd on only master nodes or selected few number of nodes rather than all nodes.
+
+
+![alt text](/blogs/images/s3-like-object-storage/scaled.png)
+
+
+### Links to repos
+
+**Storage backend:** https://github.com/ayushmd/s2  
+**Minio Object Browser UI:** https://github.com/ayushmd/minio-object-browser
+
+## Future Scope
+
+This is a side project not meant for production use. To make a usable product will require heavy development. Making a scalable architecture would involve to isolate each and every component indivisually and scale them seperately, like a storage unit should be a seperate system could be a database or etcd on limited set of master node's instead of all nodes. 
+
+More features which can be implemented:
+
+1. **Auto replication:** increase or decrease replica based on node going down and then coming up.  
+2. **Erasure coding:** using reed-solomon for erasure encoding can reduce the storage taken up.  
+3. **Function support:** add support for other s3 api's to make it compatible for big data applications.  
+
+One of the most ambitious idea which i had was to create a unified storage layer just like ceph, so naturally creating a File system support on a storage layer which does replication under the hood itself and you have reliability managed by that layer sounds very interesting. There are tools or ways to do it with creating a `FUSE Client` which i will someday try to implement in future, so thinking from that perspective i had kept the `16MB` window method in our file transfer. Most object storage are done with distributing chunks across nodes, but for a file system based storage layer you need a lower unit of storage as replacing a chunk on edits gets difficult. Also just after i released the previous article S3 released `S3 Files` which is a game changer in terms of many managed services give 'managed' tag based on reliability from S3 storage or a remote NFS Disks. Now you can mount a service on S3 Files and it kind off becomes a managed service for you.
+
+![alt text](/blogs/images/s3-like-object-storage/s3_files.png)
+
 ## References
 - https://raft.github.io/raft.pdf
 - https://github.com/hashicorp/raft
 - https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html
+- https://github.com/ayushmd/minio-object-browser
+- https://github.com/ayushmd/s2
