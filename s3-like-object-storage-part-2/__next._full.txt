@@ -1,0 +1,435 @@
+1:"$Sreact.fragment"
+2:I[79520,["https://ayushmd.github.io/blogs/_next/static/chunks/a0a0343221c79294.js"],""]
+3:I[59919,["https://ayushmd.github.io/blogs/_next/static/chunks/a0a0343221c79294.js"],"ThemeProvider"]
+4:I[22016,["https://ayushmd.github.io/blogs/_next/static/chunks/a0a0343221c79294.js","https://ayushmd.github.io/blogs/_next/static/chunks/cfb36a181b5dd070.js"],""]
+5:I[22530,["https://ayushmd.github.io/blogs/_next/static/chunks/a0a0343221c79294.js"],"ThemeToggle"]
+6:I[39756,["https://ayushmd.github.io/blogs/_next/static/chunks/ff1a16fafef87110.js","https://ayushmd.github.io/blogs/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+7:I[37457,["https://ayushmd.github.io/blogs/_next/static/chunks/ff1a16fafef87110.js","https://ayushmd.github.io/blogs/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+c:I[68027,[],"default"]
+:HL["https://ayushmd.github.io/blogs/_next/static/chunks/d068a1d883c1cbe0.css","style"]
+:HL["https://ayushmd.github.io/blogs/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["https://ayushmd.github.io/blogs/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"b":"fvviNMD3sotE7K3FJEouM","c":["","s3-like-object-storage-part-2"],"q":"","i":false,"f":[[["",{"children":[["slug","s3-like-object-storage-part-2","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"https://ayushmd.github.io/blogs/_next/static/chunks/d068a1d883c1cbe0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"https://ayushmd.github.io/blogs/_next/static/chunks/a0a0343221c79294.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable min-h-screen antialiased bg-[var(--background)] text-[var(--foreground)]","children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-BVL0WWKDLB","strategy":"afterInteractive"}],["$","$L2",null,{"id":"google-analytics","strategy":"afterInteractive","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-BVL0WWKDLB');\n          "}],["$","$L2",null,{"id":"microsoft-clarity","strategy":"afterInteractive","children":"\n            (function(c,l,a,r,i,t,y){\n              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\n              t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;\n              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);\n            })(window, document, \"clarity\", \"script\", \"vsm5vwy98j\");\n          "}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function(){\n                var t=localStorage.getItem('theme');\n                if(t==='dark'||t==='light'){ document.documentElement.classList.toggle('dark',t==='dark'); }\n                else { document.documentElement.classList.toggle('dark',window.matchMedia('(prefers-color-scheme: dark)').matches); }\n              })();\n            "}}],["$","$L3",null,{"children":[["$","header",null,{"className":"sticky top-0 z-10 border-b border-[var(--border)] bg-[var(--background)]/90 backdrop-blur","children":["$","div",null,{"className":"mx-auto flex h-14 min-w-0 max-w-3xl items-center justify-between px-3","children":[["$","$L4",null,{"href":"/","className":"text-xl font-semibold text-[var(--foreground)] hover:text-[var(--accent)]","children":"ayush.md"}],["$","$L5",null,{}]]}]}],["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L8",["$L9"],"$La"]}],{},null,false,false]},null,false,false]},null,false,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"S":true}
+d:I[97367,["https://ayushmd.github.io/blogs/_next/static/chunks/ff1a16fafef87110.js","https://ayushmd.github.io/blogs/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:I[97367,["https://ayushmd.github.io/blogs/_next/static/chunks/ff1a16fafef87110.js","https://ayushmd.github.io/blogs/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
+12:I[97367,["https://ayushmd.github.io/blogs/_next/static/chunks/ff1a16fafef87110.js","https://ayushmd.github.io/blogs/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
+9:["$","script","script-0",{"src":"https://ayushmd.github.io/blogs/_next/static/chunks/cfb36a181b5dd070.js","async":true,"nonce":"$undefined"}]
+a:["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]
+b:["$","$1","h",{"children":[null,["$","$L10",null,{"children":"$L11"}],["$","div",null,{"hidden":true,"children":["$","$L12",null,{"children":["$","$e",null,{"name":"Next.Metadata","children":"$L13"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+8:["$","main",null,{"className":"mx-auto min-w-0 max-w-3xl px-3 py-10","children":[["$","$L4",null,{"href":"/","className":"mb-6 inline-block text-sm text-[var(--muted)] hover:text-[var(--foreground)]","children":"← Back to posts"}],["$","article",null,{"children":[["$","header",null,{"className":"mb-8","children":[["$","div",null,{"children":[["$","div",null,{"children":[["$","h1",null,{"className":"text-3xl font-bold tracking-tight text-[var(--foreground)]","children":"Building S3 Compatible Multi-Node Object Storage with Raft Consensus"}],["$","div",null,{"className":"mt-3 flex items-center gap-2 text-sm","children":[["$","span",null,{"className":"rounded-full border border-[var(--border)] bg-[var(--border)] px-2 py-0.5 font-semibold uppercase tracking-wide text-[var(--foreground)]","children":"Series"}],["$","p",null,{"className":"font-bold text-[var(--foreground)]","children":"Part 2 - Building S3 Like Object Storage"}]]}]]}],["$","a",null,{"href":"https://github.com/ayushmd/s2","target":"_blank","rel":"noopener noreferrer","className":"mt-4 inline-flex items-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm font-medium text-[var(--foreground)] transition hover:border-[var(--muted)] hover:bg-[var(--border)]","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"14","height":"14","viewBox":"0 0 24 24","fill":"currentColor","aria-hidden":true,"className":"shrink-0","children":["$","path",null,{"d":"M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"}]}],"GitHub"]}]]}],["$","time",null,{"dateTime":"2026-05-10","className":"mt-2 block text-sm text-[var(--muted)]","children":"May 10, 2026"}],["$","ul",null,{"className":"mt-2 flex flex-wrap gap-1.5","aria-label":"Tags","children":[["$","li","go",{"children":["$","span",null,{"className":"inline-block rounded-full bg-[var(--border)] px-2.5 py-1 text-xs font-medium text-[var(--foreground)]","children":"go"}]}],["$","li","s3",{"children":["$","span",null,{"className":"inline-block rounded-full bg-[var(--border)] px-2.5 py-1 text-xs font-medium text-[var(--foreground)]","children":"s3"}]}],["$","li","distributed",{"children":["$","span",null,{"className":"inline-block rounded-full bg-[var(--border)] px-2.5 py-1 text-xs font-medium text-[var(--foreground)]","children":"distributed"}]}],["$","li","raft",{"children":["$","span",null,{"className":"inline-block rounded-full bg-[var(--border)] px-2.5 py-1 text-xs font-medium text-[var(--foreground)]","children":"raft"}]}],["$","li","from scratch",{"children":["$","span",null,{"className":"inline-block rounded-full bg-[var(--border)] px-2.5 py-1 text-xs font-medium text-[var(--foreground)]","children":"from scratch"}]}],["$","li","system design",{"children":["$","span",null,{"className":"inline-block rounded-full bg-[var(--border)] px-2.5 py-1 text-xs font-medium text-[var(--foreground)]","children":"system design"}]}],["$","li","pebbledb",{"children":["$","span",null,{"className":"inline-block rounded-full bg-[var(--border)] px-2.5 py-1 text-xs font-medium text-[var(--foreground)]","children":"pebbledb"}]}],["$","li","rocksdb",{"children":["$","span",null,{"className":"inline-block rounded-full bg-[var(--border)] px-2.5 py-1 text-xs font-medium text-[var(--foreground)]","children":"rocksdb"}]}]]}]]}],"$L14"]}]]}]
+:HL["/blogs/images/s3-like-object-storage/part-2-cover.png","image"]
+14:["$","div",null,{"className":"prose prose-base min-w-0 max-w-none","children":[["$","p","p-0",{"children":["$","img","img-0",{"src":"/blogs/images/s3-like-object-storage/part-2-cover.png","alt":"Go gopher relaxing on a raft in the ocean - a visual pun for Raft consensus algorithm","className":"my-4 max-w-full rounded-lg border border-[var(--border)]"}]}],"\n",["$","h3","h3-0",{"children":"Preface"}],"\n",["$","p","p-1",{"children":"With the deprecation of Minio it peaked my interest of how a object storage something like minio & s3 would even work and provide reliability so strong that it became gold standard of so many tools and products. Well the S3 client is open source but not the actual backend so we will take a look at how the other storage layer's are designed like minio, hdfs, gfs(google file system), Ceph and create a service which functions like them. Also we aim to create a multi-node object storage so that it can be distributed across nodes."}],"\n",["$","p","p-2",{"children":"The 3 main aim of this project:"}],"\n",["$","ol","ol-0",{"className":"my-4 pl-6","style":{"listStyleType":"decimal","listStylePosition":"outside"},"children":["\n",["$","li","li-0",{"className":"mb-1","style":{"display":"list-item"},"children":"Exploring other object storages like minio, hdfs, gfs(google file system)"}],"\n",["$","li","li-1",{"className":"mb-1","style":{"display":"list-item"},"children":"Making a multi-node object storage with consensus algorithm like raft"}],"\n",["$","li","li-2",{"className":"mb-1","style":{"display":"list-item"},"children":"Making a s3 compliant interface and integrating a ui like minio with our backend"}],"\n"]}],"\n",["$","details","details-0",{"children":["\n  ",["$","summary","summary-0",{"children":["$","strong","strong-0",{"children":"Series Roadmap"}]}],"\n",["$","ul","ul-0",{"className":"my-4 pl-6","style":{"listStyleType":"disc","listStylePosition":"outside"},"children":["\n",["$","li","li-0",{"className":"mb-1","style":{"display":"list-item"},"children":["$","a","a-0",{"href":"/s3-like-object-storage-part-1","target":"$undefined","rel":"$undefined","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"Part 1: Exploring the storage landscape HDFS, GFS, Minio & Ceph"}]}],"\n",["$","li","li-1",{"className":"mb-1","style":{"display":"list-item"},"children":[["$","strong","strong-0",{"children":"Part 2"}],": Making a multi-node s3 compatible object storage with raft consensus"]}],"\n"]}],"\n"]}],"\n",["$","p","p-3",{"children":["In previous article we took a look at how other object storage work, in this part we will be building the storage layer, a multi-node raft consensus cluster with raft, supporting crud from the already existing s3 client and finally putting up a ui for easy accessibility. If you have'nt read the previous article i would recommend to go through it ",["$","a","a-0",{"href":"/s3-like-object-storage-part-1","target":"$undefined","rel":"$undefined","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"here"}],"."]}],"\n",["$","p","p-4",{"children":"Let's start by addressing the Elephant in the room, how do we make it such that multiple node's coordinate with each other & dont miss a beat."}],"\n","\n",["$","p","p-5",{"children":"This is generally done by a consensus algorithm like Paxos, Zookeper's ZAB, Raft."}],"\n",["$","p","p-6",{"children":"In Distributed Systems a algorithm which is used extensively is Raft. What is it ? Why is it so popular ? What can we use to create it for ?"}],"\n",["$","p","p-7",{"children":"Well many tools and products exsists which already use raft for co-ordination"}],"\n",["$","p","p-8",{"children":[["$","strong","strong-0",{"children":"Kubernetes & etcd:"}]," etcd the key component of k8s which manages the state of the cluster is a key value pair distributed storage using raft."]}],"\n","$L15","\n","$L16","\n","$L17","\n","$L18","\n","$L19","\n","$L1a","\n","$L1b","\n","$L1c","\n","$L1d","\n","$L1e","\n","$L1f","\n","$L20","\n","$L21","\n","$L22","\n","$L23","\n","$L24","\n","$L25","\n","$L26","\n","$L27","\n","$L28","\n","$L29","\n","$L2a","\n","$L2b","\n","$L2c","\n","$L2d","\n","$L2e","\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","\n","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d","\n","$L6e","\n","$L6f","\n","$L70","\n","$L71","\n","$L72","\n","$L73","\n","$L74"]}]
+75:I[66828,["https://ayushmd.github.io/blogs/_next/static/chunks/a0a0343221c79294.js","https://ayushmd.github.io/blogs/_next/static/chunks/cfb36a181b5dd070.js"],"CodeBlock"]
+:HL["/blogs/images/s3-like-object-storage/raft_leader.gif","image"]
+:HL["/blogs/images/s3-like-object-storage/spiderman_pointing.png","image"]
+:HL["/blogs/images/s3-like-object-storage/single_binary.png","image"]
+:HL["/blogs/images/s3-like-object-storage/let_me_in.gif","image"]
+:HL["/blogs/images/s3-like-object-storage/arch.png","image"]
+:HL["/blogs/images/s3-like-object-storage/scaled.png","image"]
+:HL["/blogs/images/s3-like-object-storage/s3_files.png","image"]
+15:["$","p","p-9",{"children":[["$","strong","strong-0",{"children":"Kafka:"}]," kafka recently migrated from zookeper to self implementation of raft for distributed multinode queueing."]}]
+16:["$","p","p-10",{"children":[["$","strong","strong-0",{"children":"Nomad:"}]," Container orchestrator which uses raft for leader election."]}]
+17:["$","p","p-11",{"children":[["$","strong","strong-0",{"children":"CockroachDB"}],", ",["$","strong","strong-1",{"children":"NATS"}]," are just to name a few."]}]
+18:["$","p","p-12",{"children":["I have went through the paper, you can have a read of it at(",["$","a","a-0",{"href":"https://raft.github.io/raft.pdf","target":"_blank","rel":"noopener noreferrer","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"https://raft.github.io/raft.pdf"}],"), here we will be walking through how Raft works and why we use it while implementing the specifics of our object storage so it makes sense all the way."]}]
+19:["$","p","p-13",{"children":"The Raft paper explains in great detail how the consensus algo works, the 2 key aspects of it are"}]
+1a:["$","ul","ul-0",{"className":"my-4 pl-6","style":{"listStyleType":"disc","listStylePosition":"outside"},"children":["\n",["$","li","li-0",{"className":"mb-1","style":{"display":"list-item"},"children":["$","strong","strong-0",{"children":"Leader Election"}]}],"\n",["$","li","li-1",{"className":"mb-1","style":{"display":"list-item"},"children":["$","strong","strong-0",{"children":"Log Replication"}]}],"\n"]}]
+1b:["$","p","p-14",{"children":"To create a object storage the components required would be Nodes - which will actually store the binary or blob data, A metadata store of sort which will keep track of where the data is stored, service discovery to check the available nodes and check its liveliness and also a failover mechanism in case a node goes down."}]
+1c:["$","p","p-15",{"children":"Lets start by a single master which greatly reduces the complexity in a cluster architecture. The master will be responsible for keeping track of connected nodes acting as service discovery. It will also take actions like generating plan to store the data, replicating data."}]
+1d:["$","p","p-16",{"children":"With the requirements sorted out lets take a look at how we can go around implementing it."}]
+1e:["$","h3","h3-1",{"children":"Setting up Cluster"}]
+1f:["$","p","p-17",{"children":"There are ways we can bootstrap a cluster, a way where we specify all the nodes at the start and the election decides who will become leader."}]
+20:["$","p","p-18",{"children":"The leader election in Raft happens by a node which starts as follower state if it does not recieve any leader hearbeats it converts itself to a candidate and starts a election with other nodes."}]
+21:["$","p","p-19",{"children":"The node with the majority votes in a term becomes the leader. If 4 nodes start together there is a randomized timeout between 150ms-300ms to prevent split votes and multiple leaders at once."}]
+22:["$","p","p-20",{"children":["$","img","img-0",{"src":"/blogs/images/s3-like-object-storage/raft_leader.gif","alt":"alt text","className":"my-4 max-w-full rounded-lg border border-[var(--border)]"}]}]
+23:["$","p","p-21",{"children":["$","img","img-0",{"src":"/blogs/images/s3-like-object-storage/spiderman_pointing.png","alt":"alt text","className":"my-4 max-w-full rounded-lg border border-[var(--border)]"}]}]
+24:["$","p","p-22",{"children":"In our implementation instead of predefined nodes we will add nodes dynamically. We first start with a single node which converts itself to a leader after some terms. Then we add more nodes dynamically with the master's IP, similar to how kubernetes cluster is bootstrapped."}]
+25:["$","p","p-23",{"children":"The node waits till it gets converted to leader once it is converted the master starts collecting metrics from all the available nodes in the cluster after certain interval everytime. Below is logic which makes sure even if the master changes it starts gathering metrics."}]
+76:T440,func (fs *FileStore) GatherMetrics() {
+	leaderCh := fs.raft.LeaderCh()
+lead:
+	for {
+		select {
+		case isLeader := <-leaderCh:
+			if isLeader {
+				break lead
+			}
+		}
+	}
+	ticker := time.NewTicker(MetricsInterval * time.Second)
+	for {
+		select {
+		case <-ticker.C:
+			f := fs.raft.GetConfiguration()
+			if err := f.Error(); err != nil {
+				log.Printf("failed to get raft configuration: %v", err)
+				return
+			}
+			for _, srv := range f.Configuration().Servers {
+				log.Printf("Node ID: %s, Address: %s, Suffrage: %s",
+					srv.ID, srv.Address, srv.Suffrage)
+				mdata, err := getMetrics(string(srv.ID))
+				if err == nil {
+					fmt.Println(mdata)
+					fs.metrics[string(srv.ID)] = mdata
+				} else {
+					fs.metrics[string(srv.ID)] = Metrics{
+						Addr:        string(srv.ID),
+						CpuPercent:  0,
+						MemTotal:    0,
+						MemUsed:     0,
+						MemPercent:  0,
+						DiskTotal:   0,
+						DiskUsed:    0,
+						DiskPercent: 0,
+					}
+				}
+				// fmt.Println("Metrics:", fs.metrics, len(fs.metrics))
+			}
+		case isLeader := <-leaderCh:
+			if !isLeader {
+				goto lead
+			}
+		}
+	}
+}26:["$","$L75","pre-0",{"language":"go","code":"$76"}]
+27:["$","h3","h3-2",{"children":"File inserts"}]
+28:["$","p","p-24",{"children":"If we take a look at how the already exsisting file systems like hadoop and google file system there is a common pattern with file data storage. The file is divided into chunks of fixed size and these chunks are distibuted across the nodes."}]
+29:["$","p","p-25",{"children":["Here first when the file arrives we generate a Plan based on size of the file. Let's say the file is of size ",["$","code","code-0",{"children":"512MB"}],"  then it will be divided into ",["$","code","code-1",{"children":"4"}]," equal parts of Block Size ",["$","code","code-2",{"children":"128MB"}],". Now this block will be replicated across nodes, here if we choose the Replication factor of ",["$","code","code-3",{"children":"2"}]," the block will be stored twice in different nodes so in case if a node goes down the file can still be retrived from other nodes. In other implementaion's the Replication factor can vary from 3-5 depending on requirement. If a file of size 512MB is to be stored with Replication factor of 2 it will occupy total of 1024MB in cluster without compression."]}]
+2a:["$","p","p-26",{"children":"To keep it simple we dump file parts in round robin manner so no 2 blocks with same data end up on the same node. Which can be further extended to be weighted round robin or perhaps graph based algorithm which takes descision based on parameters like available disk size, type of disks, metrics, geolocation AZ etc."}]
+77:T485,func (fs *FileStore) FilePlan(fileSize int) Blueprint {
+	var plan Blueprint
+	var blockstore [][ReplicationFactor]Block
+	var nodes []WeightedBlock
+
+	snapshot := fs.metrics // Take snapshot of the current cluster metrics 
+
+	for k, v := range snapshot {
+		if v.DiskPercent != 0 && v.MemTotal != 0 {
+			nodes = append(nodes, WeightedBlock{
+				id:     k,
+				addr:   k,
+				weight: 0,
+			})
+		}
+	}
+
+	fmt.Println("Metric snap: ", snapshot) 
+
+	numNodes := len(nodes)
+	if numNodes == 0 {
+		numNodes = 1
+	}
+
+	factor := ReplicationFactor
+	if numNodes < ReplicationFactor { 
+		// check if the number of nodes are less then Replication factor if it is keep minimum as number of nodes
+		factor = numNodes
+	}
+	plan.NumBlocks = ceil(fileSize, BlockSize)
+	plan.TotalBlocks = plan.NumBlocks * factor
+	point := 0
+	for i := 0; i < plan.NumBlocks; i++ {
+		var singleblock [ReplicationFactor]Block
+		for k := 0; k < factor; k++ {
+			currNode := nodes[(point+k)%numNodes]
+			singleblock[k] = Block{
+				Id:   currNode.id,
+				Addr: currNode.addr,
+			}
+		}
+		blockstore = append(blockstore, singleblock)
+		point = (point + 1) % numNodes
+	}
+	plan.Store = blockstore
+	return plan
+}2b:["$","$L75","pre-1",{"language":"go","code":"$77"}]
+2c:["$","p","p-27",{"children":"The File plan decided only by the master node as it has the metrics and hurestics to make decisions also write access to replicated log(which we will discuss in a bit)."}]
+2d:["$","p","p-28",{"children":["Once the file plan generation is done the file is to be divided in chunks and replicated across desired nodes. The chunk has been further divided into windows of 16MB. As file arrives it is filled in Buffer, which is waited till its fully filled with window size (",["$","code","code-0",{"children":"16MB"}],") unless EOF occurs and a api request is fired to the node with the path. The window breakdown is done to push windows parallely via different requests."]}]
+2e:["$","p","p-29",{"children":"The node's communication is done on simple HTTP 1.0 as of now, this can be optimized further with GRPC protobuf or HTTP 2 or 3."}]
+2f:["$","p","p-30",{"children":"The file is stored in chunks and windows with numbers in increasing order making it easier while reading."}]
+30:["$","p","p-31",{"children":["Below a file name logs.txt of size (",["$","code","code-0",{"children":"129MB"}],") is stored as"]}]
+31:["$","pre","pre-2",{"children":["$","code","code-0",{"children":"storage\n|\n|-- <bucket_name> (folder)\n         |\n\t\t |-- logs.txt (129MB) (folder)\n\t\t \t\t  |\n\t\t \t\t  |-- 0  (128MB)\n\t\t\t\t  |   |-- 0 (16MB)\n\t\t\t\t  |\t  |-- 1 (16MB)\n\t\t\t\t  |\t  :\n\t\t\t\t  |\t  :\n\t\t\t\t  |\t  :\n\t\t\t\t  |\t  |-- 7 (16MB)\n\t\t\t\t  |\n\t\t\t\t  |\n\t\t\t\t  |-- 1 (1MB) (folder)\n\t\t\t\t      |-- 0 (1MB) (file)\n"}]}]
+32:["$","p","p-32",{"children":"Once the Insert is done the Log replication comes into play. Lets first discuss what is log replication and it happens in raft."}]
+33:["$","p","p-33",{"children":"Now log which might have come to your mind could be print statement logs, well its not exactly that but log here or in distributed systems refers to entry of action. When some change is to be done to the state it is captured as a 'log', a log has a index, term in which it was sent out, and the action (whatevery we want to be replicated across node). Now the replicating log can be anything it can be query or perhaps a metadata language used for internal communication"}]
+34:["$","p","p-34",{"children":"if we were to create a distributed kv-store we would replicate all the set queries via raft log, something like"}]
+35:["$","div","table-0",{"className":"table-wrapper","children":["$","table",null,{"children":[["$","thead","thead-0",{"children":["$","tr","tr-0",{"children":[["$","th","th-0",{"children":"Index"}],["$","th","th-1",{"children":"Term"}],["$","th","th-2",{"children":"Command"}]]}]}],["$","tbody","tbody-0",{"children":[["$","tr","tr-0",{"children":[["$","td","td-0",{"children":"1"}],["$","td","td-1",{"children":"1"}],["$","td","td-2",{"children":"SET x=10"}]]}],["$","tr","tr-1",{"children":[["$","td","td-0",{"children":"2"}],["$","td","td-1",{"children":"1"}],["$","td","td-2",{"children":"SET y=20"}]]}],["$","tr","tr-2",{"children":[["$","td","td-0",{"children":"3"}],["$","td","td-1",{"children":"2"}],["$","td","td-2",{"children":"SET x=15"}]]}]]}]]}]}]
+36:["$","p","p-35",{"children":"In raft we can also snapshot or go through the sequence of logs to reach to the same state again. We are using Hashicorp Raft Implementation."}]
+37:["$","p","p-36",{"children":["Here we are replicating good old json, which has ",["$","code","code-0",{"children":"type"}]," tag which tells us what type of operation it is ",["$","code","code-1",{"children":"create"}]," or ",["$","code","code-2",{"children":"delete"}],". We are esentially replicating the plan or metadata across node's and storing them on all nodes."]}]
+78:T91e,func (fs *FileStore) CreateFile(bucket, key, compression string, size int, r io.Reader) error {
+	var plan Blueprint
+	var err error
+
+	// Get blueprint or the plan which tells where will a block go
+	if fs.IsLeader() { // determines if current node is leader
+		plan = fs.FilePlan(size)
+	} else {
+		// api call and get plan from leader
+		_, haddr := fs.GetLeader()
+		plan, err = getPlan(haddr, size)
+		if err != nil {
+			fmt.Println("Error getting plan from leader:", err)
+			return err
+		}
+	}
+
+	fmt.Println("Plan:", plan)
+
+	// allows MaxWorker(int), the number of parallel requests
+	workers := make(chan struct{}, MaxWorker) 
+	buf := make([]byte, WindowSize)
+	errCh := make(chan error, ErrChSize)
+
+	totalRead := 0
+	path := filepath.Join(bucket, key)
+
+	for {
+		n, err := io.ReadFull(r, buf)
+		if n > 0 {
+			var currBlock int = totalRead / BlockSize
+			var currWindow int = (totalRead % BlockSize) / WindowSize
+			block := plan.Store[currBlock]
+			dataCopy := make([]byte, n) // this buffer is to send the data via parallel request
+			copy(dataCopy, buf[:n]) 
+
+			for k := 0; k < ReplicationFactor; k++ {
+				workers <- struct{}{}
+				go func(blockNum, windowNum int, data []byte) {
+					// go routine to send file chunks to different nodes
+
+					defer func() {
+						<-workers
+					}()
+					fmt.Println("Sending block", blockNum, "window", windowNum, "size", len(data))
+
+					// sends file window of a chunk to appropriate address
+					es := sendFilePeer(
+						path,
+						block[k].Addr,
+						blockNum,
+						windowNum,
+						dataCopy,
+					)
+					errCh <- es
+				}(currBlock, currWindow, dataCopy)
+			}
+			totalRead += n
+		}
+		if err == io.EOF || err == io.ErrUnexpectedEOF {
+			break
+		}
+		if err != nil {
+			return err
+		}
+	}
+	if err := <-errCh; err != nil {
+		return err
+	}
+
+    // metadata object which is replicated via json
+	var op FileOperation = FileOperation{
+		Type: "create",
+		FileMetadata: FileMetadata{
+			Bucket:      bucket,
+			Key:         key,
+			Compression: compression,
+			Size:        size,
+			Timestamp:   time.Now().Unix(),
+			Blueprint:   plan,
+		},
+	}
+
+	fmt.Println("Sent blocks: ", op)
+	if fs.IsLeader() {
+		fs.SubmitOperation(op)
+	} else {
+		_, lid := fs.GetLeader()
+		err := setOperation(lid, op)
+		fmt.Println("Operation sending to leader: ", lid, err)
+	}
+	fmt.Println("Operation submitted")
+	return nil
+}38:["$","$L75","pre-3",{"language":"go","code":"$78"}]
+39:["$","p","p-37",{"children":["The above is the main code block which shows how a file is stored and replicated. First it creates a plan from leader. Then the files is buffered upto window size(currently ",["$","code","code-0",{"children":"16MB"}],"). Then ",["$","code","code-1",{"children":"sendFilePeer"}]," is responsible to send file window via a single request. Finally the ",["$","code","code-2",{"children":"SubmitOperation"}]," does raft log application."]}]
+3a:["$","p","p-38",{"children":"In raft the changes happen through Leader so the action request even sent to any node is proxied to leader(in application code). After file inserts are done the file creation log is sent to leader which updates it to all the nodes and each node stores it to its in memory map."}]
+3b:["$","p","p-39",{"children":"You may think what if log sequence get's messed up due to failures or shutdown?"}]
+3c:["$","p","p-40",{"children":"No it does'nt that's the neat part Raft ensures the log sequence is maintained, the log is committed only if majority consensus is reached. Even if the leader fails and comes back up again it becomes follower and is brought in sync by the leader to commit to the log sequence and deleting conflicting logs. Not to say there are no other issues but raft handles the log sequence."}]
+3d:["$","h3","h3-3",{"children":"File Fetching"}]
+3e:["$","p","p-41",{"children":["When we recieve a ",["$","code","code-0",{"children":"get"}]," file request it can be sent to any of the node as plan replication is done to all the nodes. We get metadata mapping from the reciever node. The leased node then assimilates chunks from the different adrresses where it is stored."]}]
+79:T663,func (fs *FileStore) GetEntireFile(bucket, key string) (readerWithClosers, error) {
+	metadata := fs.meta[path] // In mem memory metadata mapper
+
+	if ek != nil {
+		return readerWithClosers{}, ek
+	}
+
+	path := filepath.Join(meta.Bucket, meta.Key, meta.Identifier)
+
+	NumBlocks := meta.NumBlocks
+	readers := make([]io.Reader, NumBlocks)
+	closers := make([]func() error, NumBlocks)
+	errCh := make(chan error, NumBlocks)
+	var wg sync.WaitGroup
+
+	for i := 0; i < NumBlocks; i++ {
+		wg.Add(1)
+		go func(block int) { // fetch all blocks parallely and assemble them in desired sequence
+			defer wg.Done()
+			client := &http.Client{}
+
+			var r io.Reader
+			var closeFunc func() error
+			var err error
+
+			// Try all replicas
+			for j := 0; j < ReplicationFactor; j++ {
+				addr := meta.Store[block][j].Addr // address of node where file is
+				// stream file from peer
+				r, closeFunc, err = getFilePeer(path, addr, block, client)
+				if err == nil {
+					readers[block] = r
+					closers[block] = closeFunc
+					return
+				} else {
+					fmt.Println("Error getFilePeer", block, "from", addr, ":", err)
+				}
+			}
+
+			// All replicas failed
+			errCh <- fmt.Errorf("failed to fetch block %d: %w", block, err)
+		}(i)
+	}
+
+	wg.Wait()
+	close(errCh)
+
+	// Check for errors
+	if len(errCh) > 0 {
+		// Close any open readers before returning
+		for _, c := range closers {
+			if c != nil {
+				_ = c()
+			}
+		}
+		return readerWithClosers{}, <-errCh
+	}
+
+	// Combine all block readers
+	multiReader := io.MultiReader(readers...)
+
+	// Wrap to ensure closers are called after reading
+	return readerWithClosers{
+		Reader:  multiReader,
+		closers: closers,
+	}, nil
+}3f:["$","$L75","pre-4",{"language":"go","code":"$79"}]
+40:["$","p","p-42",{"children":"In the above code snippet you can see the file is fetched from peer's in the sequence of how they are stored from replicas, if one replica fails it tries other. These are reader's exposed by the api request so not all the data is loaded in memory but the reader's are combined to give a single reader, so while pipeing it back to the client our server is not overloaded in memory and can do the congestion control (send only as much as client can handle)."}]
+41:["$","h3","h3-4",{"children":"So is it DONE?"}]
+42:["$","p","p-43",{"children":"well not really"}]
+43:["$","p","p-44",{"children":"Currently these are the main function which does the fetching and creation of files but it has stark issue, which is the system is not race safe as a whole. If the same api is called at 2 nodes it races to upload a file to same path which will cause collision and corruption. There are 2 ways we can solve this issue."}]
+44:["$","ol","ol-1",{"className":"my-4 pl-6","style":{"listStyleType":"decimal","listStylePosition":"outside"},"children":["\n",["$","li","li-0",{"className":"mb-1","style":{"display":"list-item"},"children":[["$","strong","strong-0",{"children":"Doing atomic inserts:"}]," The co-ordination is done by global or distributed locks over a bucket and key path."]}],"\n",["$","li","li-1",{"className":"mb-1","style":{"display":"list-item"},"children":[["$","strong","strong-0",{"children":"Doing multiple inserts:"}]," The system is constructed with view of eventual consistency and multiple files are uploaded for same key path."]}],"\n"]}]
+45:["$","p","p-45",{"children":"The first way ensures efficient resource utilisation but is difficult to manage at scale and managing locks is another overhead. The second option is where the files are assigned identifier and a mapping is maintained between the id and path key. If 2 files race to upload at same path, the last upload should win. This way we can ensure s3 like behaviour and avoids collisions."}]
+46:["$","p","p-46",{"children":["We will need a storage layer to store the metadata and mappings for quick lookups and which will ensure persistence. Lets bring in pebble db a trusted kv storage engine from previous ",["$","a","a-0",{"href":"/time-based-cue","target":"$undefined","rel":"$undefined","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"article"}],"."]}]
+47:["$","p","p-47",{"children":["We run embedded db on each node along with our server only, ",["$","strong","strong-0",{"children":"PebbleDb"}]," is a embedded db so it does'nt need to be deployed like a server. we spin up db which gives you access to db operations similar to sqlite. The state maintained in db is same throughout as Raft ensures seqence as we saw earlier, so all the db instances across node's are in sync. This is similar to etcd, where it uses badger and raft for distributed kv store but we only store a metadata not a generalized storage like etcd."]}]
+48:["$","p","p-48",{"children":"Pebble db does not support atomic operations inherently. But we kind of dont need to do atomic updates, just like we did for the file storage we store multiple entries, and do the update for the last one approaching and cleanup the rest of entries.\nSo now we have a storage layer which acts like switch to many clients who race to do file uploads but the db points to the last entry only."}]
+49:["$","p","p-49",{"children":"The files are stored in structure as"}]
+4a:["$","pre","pre-5",{"children":["$","code","code-0",{"children":"storage\n|\n|-- <bucket_name>\n         |\n\t\t |-- logs.txt (448MB)\n\t\t |\t\t  |-- 0  (128MB)\n\t\t |\t\t  |-- 1  (128MB)\n\t\t |\t\t  |-- 2  (128MB)\n\t\t |\t\t  |-- 3  (64MB)\n         |\n         |-- love_letter.pdf (129MB)\n\t\t\t\t  |-- 0  (128MB)\n\t\t\t\t  |-- 1  (1MB)\n"}]}]
+4b:["$","p","p-50",{"children":["so if concurrent write happens at ",["$","code","code-0",{"children":"logs.txt"}]," the file will be corrupted, so provide each file upload a identifier or a uuid and store multiple copies and the last upload to complete will be where the metadata db be pointing to, much like dns."]}]
+4c:["$","pre","pre-6",{"children":["$","code","code-0",{"children":"storage\n|\n|-- <bucket_name>\n         |\n\t\t |-- logs.txt (448MB)\n\t\t |        |\n\t\t |\t\t  |-- d584e2b7-459b-4a9c-a7b7-44bef101ff07\n\t\t |\t\t  |\t\t\t\t\t|-- 1  (128MB)\n\t\t |\t\t  |\t\t\t\t\t|-- 2  (128MB)\n\t\t |\t\t  |\t\t\t\t\t|-- 3  (64MB)\n\t\t |\t\t  |\n\t\t |\t\t  |-- 057d7ca0-73da-4484-90bf-9c8cb3258668 (marked for cleanup)\n\t\t |\t\t\t\t\t\t\t|-- 1  (128MB)\n\t\t |\t\t\t\t\t\t\t|-- 2  (128MB)\n\t\t |\t\t\t\t\t\t\t|-- 3  (64MB)\t\t\n         |\n         |-- love_letter.pdf (129MB)\n\t\t          |\n\t\t\t\t  |-- ebad6e16-e17a-4079-b97e-058c994afc79\n\t\t\t\t  \t\t\t\t\t|-- 0  (128MB)\n\t\t\t\t\t\t\t\t\t|-- 1  (1MB)\n"}]}]
+4d:["$","p","p-51",{"children":"This is a tradeoff again, more storage for reliability and durability. This also opens up a window for another feature which is versioning, we can mark id's as version's then keep and cleanup data as per versioning policies, though we wont be implementing it currently."}]
+4e:["$","p","p-52",{"children":"You might ask why not a full db is used, which has multiple column's or a document perhaps? why kv db?. But I'd say we dont need a db as such, at storage layer a lot of db's end up looking like a ordered key-value pairs even when you store it in multi-column format, so if we are not looking for any complex joins or backups or transactions but only direct queries, embedded db work just fine."}]
+4f:["$","p","p-53",{"children":["The main selling feature rather is it get's bundled in one ",["$","strong","strong-0",{"children":"Single Binary"}]," no external dependencies."]}]
+50:["$","p","p-54",{"children":["$","img","img-0",{"src":"/blogs/images/s3-like-object-storage/single_binary.png","alt":"alt text","className":"my-4 max-w-full rounded-lg border border-[var(--border)]"}]}]
+51:["$","p","p-55",{"children":"As we are using raft already our db is a distributed key-value db, a record change made on one is reflected everywhere and raft ensures the sequence of queries are same everywhere."}]
+7a:T5dc,func (fs *FileStore) Apply(log *raft.Log) interface{} {
+	var op FileOperation
+	if err := json.Unmarshal(log.Data, &op); err != nil {
+		fmt.Printf("Failed to unmarshal log entry: %v", err)
+		return nil
+	}
+	fs.mu.Lock()
+	defer fs.mu.Unlock()
+	path := filepath.Join(op.Bucket, op.Key)
+	fmt.Println("Applying operation:", op.Type, "=", op)
+	switch op.Type {
+	case "create": // for create file or put file
+		// fs.meta[path] = op.FileMetadata
+
+		er := fs.store.UpsertKeyAsync(op.FileMetadata) 
+		// this async is async disk write not to be mistaken for async db writes.
+		if er != nil {
+			fmt.Println("Error: ", er)
+		}
+		er = fs.store.InsertIdentifierAsync(op.FileMetadata)
+		if er != nil {
+			fmt.Println("Error: ", er)
+		}
+		deletes, er := fs.store.DeleteOldIdentifiers(op.FileMetadata)
+		if er != nil {
+			fmt.Println("Error: ", er)
+		}
+		for _, d := range deletes {
+			delpath := filepath.Join(d.Bucket, d.Key, d.Identifier)
+			uniqueEndpoints := make(map[string]struct{}) // acts as a set
+			for _, v := range d.Store {
+				for _, block := range v {
+					uniqueEndpoints[block.Addr] = struct{}{}
+				}
+			}
+			for url, _ := range uniqueEndpoints {
+				// deletes from local if the url matches with it's own
+				go deleteFile(url, delpath) 
+			}
+		}
+		return nil
+	case "delete":
+		// delete(fs.meta, path)
+
+		err := fs.store.DeleteKey(op.Bucket, op.Key)
+		if err != nil {
+			fmt.Println("Error: ", err)
+		}
+		return nil
+	default:
+		fmt.Printf("Unknown operation type: %s", op.Type)
+		return nil
+	}
+}52:["$","$L75","pre-7",{"language":"go","code":"$7a"}]
+53:["$","p","p-56",{"children":"Currently all the nodes support all the api's instead of just master, how? for get requests it uses the distributed kv layer that we have created with raft and for decision based api's like file plan and raft operations the current node check's if it is the master, yes then it does the operation else it make's api call to leader so each node act's like a proxy."}]
+54:["$","p","p-57",{"children":"Which means we can load balance via any L4 L7 Load balancer like haproxy or nginx and everything should work just fine from all the nodes. This behaviour is similar to Minio."}]
+55:["$","h3","h3-5",{"children":"Making our backend usable"}]
+56:["$","p","p-58",{"children":["The S3 compatible api is pretty much straight forward, S3 follows simple nomenclature the operations are performed according to api request path. CRUD is done on path ",["$","code","code-0",{"children":"/{bucket}/{path}"}],", currently we only support 3-4 main functions. To create a complete support for all s3 api's is a task of it's own. Below is list of supported api's."]}]
+57:["$","pre","pre-8",{"children":["$","code","code-0",{"children":"r.HandleFunc(\"/\", fs.ListBucketsS3).Methods(\"GET\")\nr.HandleFunc(\"/{bucket}\", fs.CreateBucketS3).Methods(\"PUT\")\nr.HandleFunc(\"/{bucket}\", fs.HeadBucketS3).Methods(\"HEAD\")\nr.HandleFunc(\"/{bucket}\", fs.ListObjectsV2S3).Methods(\"GET\")\nr.HandleFunc(\"/{bucket}/\", fs.ListObjectsV2S3).Methods(\"GET\")\nr.HandleFunc(\"/{bucket}/{filepath:.+}\", fs.GetS3File).Methods(\"GET\")\nr.HandleFunc(\"/{bucket}/{filepath:.+}\", fs.HeadS3File).Methods(\"HEAD\")\nr.HandleFunc(\"/{bucket}/{filepath:.+}\", fs.PutS3File).Methods(\"PUT\")\nr.HandleFunc(\"/{bucket}/\", fs.PutS3File).Methods(\"PUT\")\nr.HandleFunc(\"/{bucket}/{filepath:.+}\", fs.DeleteS3File).Methods(\"DELETE\")\n"}]}]
+58:["$","p","p-59",{"children":"With support of these api's we can use s3 sdk in any language and it should work for these operation. The official s3 api documentation helped a lot in implementing the api's, also s3 api's widely use xml and that's that."}]
+59:["$","p","p-60",{"children":["It would be a bit convinent to have a ui, so instead of creating a ui of own i thought why not fork the minio ui. Minio UI called ",["$","code","code-0",{"children":"object-browser"}],"  ",["$","del","del-0",{"children":"is"}],"  was open source under AGPL when i had forked it but seems to have been taken down ever since, also pulled from my github fork's 🤔. Turn's out the ui has been stripped from past year and finally taken down, anyways we only want a barebone ui to do our operations."]}]
+5a:["$","p","p-61",{"children":"The ui is not just frontend, the frontend has a go backend which does all the api requests and renders it to the frontend. So the main logic we need to change is a go backend. The object-browser had lot's of moving parts web sockets, authentication, prefetches and what not."}]
+5b:["$","h1","h1-0",{"children":"JUST GIVE ME THE UI"}]
+5c:["$","p","p-62",{"children":["$","img","img-0",{"src":"/blogs/images/s3-like-object-storage/let_me_in.gif","alt":"alt text","className":"my-4 max-w-full rounded-lg border border-[var(--border)]"}]}]
+5d:["$","p","p-63",{"children":["So after wrangling my head around a bit i was able to bypass and remove authentication, yet it did'nt seem to work as i wanted it to. Only listing api was working. This was the perfect use case for AI, with the help of Cursor i was able to make it work with my backend and finally we have a UI in all it's glory. You can access the changed ui repo on my github ",["$","a","a-0",{"href":"https://github.com/ayushmd/minio-object-browser","target":"_blank","rel":"noopener noreferrer","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"here"}]]}]
+5e:["$","p","p-64",{"children":["Below is the demo of the ",["$","strong","strong-0",{"children":"Cluster dashboard UI"}],", ",["$","strong","strong-1",{"children":"Minio UI"}]," and the ",["$","strong","strong-2",{"children":"Storage backend"}],". The demo shows how files can be served even if a node goes down from other replicas. The Cluster Dashboard UI is the UI for seeing live metrics polled via all the nodes. The minio ui is running locally pointing to a HAProxy load balancer which load balances requests on the ",["$","code","code-0",{"children":"3 nodes"}]," of our Cluster."]}]
+5f:["$","p","p-65",{"children":["$","video","img-0",{"controls":true,"style":{"width":"100%","maxWidth":"100%","borderRadius":"0.5rem","border":"1px solid var(--border)","margin":"1rem 0"},"children":[["$","source",null,{"src":"/blogs/images/s3-like-object-storage/demo_video.mp4","type":"video/mp4"}],"Your browser does not support the video tag."]}]}]
+60:["$","p","p-66",{"children":"Also now as we support the S3 API's we have access to wide list of libraries and sdk's across languages. So wrote a simple script which goes through the files and checks if it is a csv, if yes it downloads and merges all the csv's to one."}]
+61:["$","$L75","pre-9",{"language":"py","code":"paginator = s3.get_paginator(\"list_objects_v2\")\nfirst = True\nfor page in paginator.paginate(Bucket=BUCKET, Prefix=PREFIX):\n    for obj in page.get(\"Contents\", []):\n        key = obj[\"Key\"]\n\n        if key.lower().endswith(\".csv\"):\n            print(f\"Processing {key}\")\n\n            response = s3.get_object(Bucket=BUCKET, Key=key)\n            df = pd.read_csv(BytesIO(response[\"Body\"].read()))\n\n            df.to_csv(\n                OUTPUT_FILE,\n                mode=\"w\" if first else \"a\",\n                header=first,\n                index=False\n            )\n            first = False\nprint(f\"Saved merged file to {OUTPUT_FILE}\")"}]
+62:["$","p","p-67",{"children":"and voila it works like a charm"}]
+63:["$","p","p-68",{"children":"After making this, my wish extended to also support spark application's as well. But it requires me to implement a lot more function's"}]
+64:["$","p","p-69",{"children":[["$","code","code-0",{"children":"CopyObjectS3"}],", ",["$","code","code-1",{"children":"DeleteObjectsS3"}],", ",["$","code","code-2",{"children":"GetBucketLocationS3"}],", ",["$","code","code-3",{"children":"CreateMultipartUploadS3"}],", ",["$","code","code-4",{"children":"UploadPartS3"}],", ",["$","code","code-5",{"children":"CompleteMultipartUploadS3"}],", ",["$","code","code-6",{"children":"AbortMultipartUploadS3"}],", ",["$","code","code-7",{"children":"ListPartsS3"}],", ",["$","code","code-8",{"children":"ListMultipartUploadsS3"}],", ",["$","code","code-9",{"children":"GetRangedObject"}]]}]
+65:["$","p","p-70",{"children":"Esentially optimised functions for the exsisting CRUD operations. Though we can incorporate these functions with minor changes in the exsisting architecture, but we have achieved what we started with, so might implement these feature's some time in future."}]
+66:["$","p","p-71",{"children":"Though the above section of UI and S3 Client API's might sound short compared to article but took the most time in figuring out and playing around 😅."}]
+67:["$","p","p-72",{"children":"Our architecture looks something like below, each of the component is distributed across all nodes, this works until only certain size of cluster after which it starts showing cracks. The number is still large so there isn't a need to optimize it further."}]
+68:["$","p","p-73",{"children":["$","img","img-0",{"src":"/blogs/images/s3-like-object-storage/arch.png","alt":"alt text","className":"my-4 max-w-full rounded-lg border border-[var(--border)]"}]}]
+69:["$","p","p-74",{"children":"A scalable architecture would be to isolate all the components and scale them indivisually. The very first would be the metadata store which should be isolated, as replicating data on all nodes is the main bottleneck, as the number of node's increase the  replication lag increases and leads to inconsistent behaviour. Even in kubernetes there is etcd on only master nodes or selected few number of nodes rather than all nodes."}]
+6a:["$","p","p-75",{"children":["$","img","img-0",{"src":"/blogs/images/s3-like-object-storage/scaled.png","alt":"alt text","className":"my-4 max-w-full rounded-lg border border-[var(--border)]"}]}]
+6b:["$","h3","h3-6",{"children":"Links to repos"}]
+6c:["$","p","p-76",{"children":[["$","strong","strong-0",{"children":"Storage backend:"}]," ",["$","a","a-0",{"href":"https://github.com/ayushmd/s2","target":"_blank","rel":"noopener noreferrer","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"https://github.com/ayushmd/s2"}],["$","br","br-0",{}],"\n",["$","strong","strong-1",{"children":"Minio Object Browser UI:"}]," ",["$","a","a-1",{"href":"https://github.com/ayushmd/minio-object-browser","target":"_blank","rel":"noopener noreferrer","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"https://github.com/ayushmd/minio-object-browser"}]]}]
+6d:["$","h2","h2-0",{"children":"Future Scope"}]
+6e:["$","p","p-77",{"children":"This is a side project not meant for production use. To make a usable product will require heavy development. Making a scalable architecture would involve to isolate each and every component indivisually and scale them seperately, like a storage unit should be a seperate system could be a database or etcd on limited set of master node's instead of all nodes."}]
+6f:["$","p","p-78",{"children":"More features which can be implemented:"}]
+70:["$","ol","ol-2",{"className":"my-4 pl-6","style":{"listStyleType":"decimal","listStylePosition":"outside"},"children":["\n",["$","li","li-0",{"className":"mb-1","style":{"display":"list-item"},"children":[["$","strong","strong-0",{"children":"Auto replication:"}]," increase or decrease replica based on node going down and then coming up."]}],"\n",["$","li","li-1",{"className":"mb-1","style":{"display":"list-item"},"children":[["$","strong","strong-0",{"children":"Erasure coding:"}]," using reed-solomon for erasure encoding can reduce the storage taken up."]}],"\n",["$","li","li-2",{"className":"mb-1","style":{"display":"list-item"},"children":[["$","strong","strong-0",{"children":"Function support:"}]," add support for other s3 api's to make it compatible for big data applications."]}],"\n"]}]
+71:["$","p","p-79",{"children":["One of the most ambitious idea which i had was to create a unified storage layer just like ceph, so naturally creating a File system support on a storage layer which does replication under the hood itself and you have reliability managed by that layer sounds very interesting. There are tools or ways to do it with creating a ",["$","code","code-0",{"children":"FUSE Client"}]," which i will someday try to implement in future, so thinking from that perspective i had kept the ",["$","code","code-1",{"children":"16MB"}]," window method in our file transfer. Most object storage are done with distributing chunks across nodes, but for a file system based storage layer you need a lower unit of storage as replacing a chunk on edits gets difficult. Also just after i released the previous article S3 released ",["$","code","code-2",{"children":"S3 Files"}]," which is a game changer in terms of many managed services give 'managed' tag based on reliability from S3 storage or a remote NFS Disks. Now you can mount a service on S3 Files and it kind off becomes a managed service for you."]}]
+72:["$","p","p-80",{"children":["$","img","img-0",{"src":"/blogs/images/s3-like-object-storage/s3_files.png","alt":"alt text","className":"my-4 max-w-full rounded-lg border border-[var(--border)]"}]}]
+73:["$","h2","h2-1",{"children":"References"}]
+74:["$","ul","ul-1",{"className":"my-4 pl-6","style":{"listStyleType":"disc","listStylePosition":"outside"},"children":["\n",["$","li","li-0",{"className":"mb-1","style":{"display":"list-item"},"children":["$","a","a-0",{"href":"https://raft.github.io/raft.pdf","target":"_blank","rel":"noopener noreferrer","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"https://raft.github.io/raft.pdf"}]}],"\n",["$","li","li-1",{"className":"mb-1","style":{"display":"list-item"},"children":["$","a","a-0",{"href":"https://github.com/hashicorp/raft","target":"_blank","rel":"noopener noreferrer","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"https://github.com/hashicorp/raft"}]}],"\n",["$","li","li-2",{"className":"mb-1","style":{"display":"list-item"},"children":["$","a","a-0",{"href":"https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html","target":"_blank","rel":"noopener noreferrer","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html"}]}],"\n",["$","li","li-3",{"className":"mb-1","style":{"display":"list-item"},"children":["$","a","a-0",{"href":"https://github.com/ayushmd/minio-object-browser","target":"_blank","rel":"noopener noreferrer","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"https://github.com/ayushmd/minio-object-browser"}]}],"\n",["$","li","li-4",{"className":"mb-1","style":{"display":"list-item"},"children":["$","a","a-0",{"href":"https://github.com/ayushmd/s2","target":"_blank","rel":"noopener noreferrer","className":"text-[var(--accent)] underline hover:text-[var(--accent-hover)]","children":"https://github.com/ayushmd/s2"}]}],"\n"]}]
+11:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7b:I[27201,["https://ayushmd.github.io/blogs/_next/static/chunks/ff1a16fafef87110.js","https://ayushmd.github.io/blogs/_next/static/chunks/d2be314c3ece3fbe.js"],"IconMark"]
+f:null
+13:[["$","title","0",{"children":"Building S3 Compatible Multi-Node Object Storage with Raft Consensus | ayush.md"}],["$","meta","1",{"name":"description","content":"This article goes in depth about Raft Consensus and using it to develop a object storage layer along with the UI and SDK which is S3 API Compatible. It goes in deep about the design decisions and tradeoffs."}],["$","meta","2",{"property":"og:title","content":"Building S3 Compatible Multi-Node Object Storage with Raft Consensus"}],["$","meta","3",{"property":"og:description","content":"This article goes in depth about Raft Consensus and using it to develop a object storage layer along with the UI and SDK which is S3 API Compatible. It goes in deep about the design decisions and tradeoffs."}],["$","meta","4",{"name":"twitter:card","content":"summary"}],["$","meta","5",{"name":"twitter:title","content":"Building S3 Compatible Multi-Node Object Storage with Raft Consensus"}],["$","meta","6",{"name":"twitter:description","content":"This article goes in depth about Raft Consensus and using it to develop a object storage layer along with the UI and SDK which is S3 API Compatible. It goes in deep about the design decisions and tradeoffs."}],["$","link","7",{"rel":"icon","href":"/blogs/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","8",{"rel":"icon","href":"/blogs/icon.svg?icon.3b34bfaa.svg","sizes":"any","type":"image/svg+xml"}],["$","$L7b","9",{}]]
