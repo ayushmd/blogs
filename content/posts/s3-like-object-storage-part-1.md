@@ -1,6 +1,6 @@
 ---
-title: "Building S3 Like Multi-Node Object Storage from scratch: Exploring the Storage landsacpe"
-subtitle: "Part 1 - Exploring the storage landscape HDFS, GFS, Minio & Ceph."
+title: "Exploring the Storage landsacpe with HDFS, GFS, Minio & Ceph."
+subtitle: "Part 1 - Building S3 Like Object Storage"
 date: "2026-03-29"
 description: "This article is a extract of research paper's of hdfs, gfs, ceph and also explores how other solutions work including Minio, S3 and Kubernetes native CSI Storages."
 tags: ["go", "s3", "distributed", "raft", "from scratch", "system design", "hdfs", "gfs", "minio", "ceph", "kubernetes", "csi", "longhorn", "rook", "white paper"]

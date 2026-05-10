@@ -205,9 +205,35 @@ body {
   background: var(--code-bg) !important;
   border: none !important;
 }
-.code-block-content code {
+
+/* Preserve indentation on all viewports (prose/normalize can collapse spaces with pre-line) */
+.code-block-content code[class*="language-"] {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  box-sizing: border-box;
+  white-space: pre !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
   tab-size: 4;
+  font-variant-ligatures: none;
 }
+
+/* Prism root: do not nest a second horizontal scroller (fixes iOS layout/indent quirks) */
 .code-block-content > div {
-  overflow-x: auto;
+  overflow-x: visible;
+  overflow-y: visible;
+  min-width: 0;
+}
+
+.code-block-content {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Line numbers steal horizontal space on narrow screens; hide and keep code indentation intact */
+@media (max-width: 639px) {
+  .code-block-content span.linenumber,
+  .code-block-content .react-syntax-highlighter-line-number {
+    display: none !important;
+  }
 }

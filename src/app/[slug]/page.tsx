@@ -139,6 +139,26 @@ export default async function BlogPost({ params }: Props) {
                   !isProd && src.startsWith("/blogs/")
                     ? src.slice(6)
                     : src;
+                
+                // Handle video files
+                if (resolvedSrc.endsWith('.mp4') || resolvedSrc.endsWith('.webm') || resolvedSrc.endsWith('.ogg')) {
+                  return (
+                    <video
+                      controls
+                      style={{
+                        width: '100%',
+                        maxWidth: '100%',
+                        borderRadius: '0.5rem',
+                        border: '1px solid var(--border)',
+                        margin: '1rem 0'
+                      }}
+                    >
+                      <source src={resolvedSrc} type={`video/${resolvedSrc.split('.').pop()}`} />
+                      Your browser does not support the video tag.
+                    </video>
+                  );
+                }
+                
                 return (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
